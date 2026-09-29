@@ -20,6 +20,8 @@
   <meta name="twitter:description" content="Engineered control. Real world impact.">
   <meta name="twitter:image" content="https://copperloon.com/static/images/brand/Copper_Loon_Loon_Mark_FullColor.svg">
 
+  <meta name="websitelaunches-verification" content="855f6bb1da634137d6708c61e22bea50">
+  
   <script type="application/ld+json">
   [
     {
@@ -38,13 +40,14 @@
     }
   ]
   </script>
-
+  <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="c91dcebd-5a6b-4c3d-8759-a0658f399170"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  <link rel="icon" href="/static/images/brand/Copper_Loon_Loon_Mark_FullColor.svg" type="image/svg+xml">
+  <link rel="icon" href="/static/images/brand/Copper_Loon_Loon_Mark_WhiteOutline.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/static/css/home.css">
 </head>
 <body>
@@ -66,8 +69,18 @@
     </ul>
 
     <div class="nav-cta">
-      <a href="#demo" class="btn btn-nav-demo">Explore Demo</a>
-      <a href="#review" class="btn btn-primary">Free System Review</a>
+      <a href="#demo"
+        class="btn btn-nav-demo"
+        data-umami-event="demo_interest_clicked"
+        data-umami-event-location="top_nav">
+        Explore Demo
+      </a>
+      <a href="#review"
+        class="btn btn-primary"
+        data-umami-event="system_review_interest_clicked"
+        data-umami-event-location="top_nav">
+        Free System Review
+      </a>
     </div>
 
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-mobile">
@@ -83,8 +96,18 @@
     <a href="#screens">Screens</a>
 
     <div class="nav-mobile-ctas">
-      <a href="#demo" class="nav-mobile-cta-link">Explore Demo</a>
-      <a href="#review" class="nav-mobile-cta-link">Free System Review</a>
+      <a href="#demo"
+         class="nav-mobile-cta-link"
+         data-umami-event="demo_interest_clicked"
+         data-umami-event-location="mobile_nav">
+        Explore Demo
+      </a>
+      <a href="#review"
+         class="nav-mobile-cta-link"
+         data-umami-event="system_review_interest_clicked"
+         data-umami-event-location="mobile_nav">
+        Free System Review
+      </a>
     </div>
   </nav>
 </header>
@@ -104,10 +127,16 @@
         </p>
 
         <div class="hero-actions">
-          <a href="#grow" class="btn btn-primary btn-large">
+          <a href="#grow"
+             class="btn btn-primary btn-large"
+             data-umami-event="grow_platform_clicked"
+             data-umami-event-location="hero">
             See the Grow Platform <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
           </a>
-          <a href="#review" class="btn btn-ghost btn-large">
+          <a href="#review"
+             class="btn btn-ghost btn-large"
+             data-umami-event="system_review_interest_clicked"
+             data-umami-event-location="hero">
             Free System Review
           </a>
         </div>
@@ -173,7 +202,8 @@
     <div class="container grow-grid">
       <div class="grow-copy">
         <span class="section-kicker">Featured Solution</span>
-        <h2 id="grow-title">Grow-facility automation, built for day-to-day operation.</h2>
+        <h2 id="grow-title">Cultivation automation, built for day-to-day operation.</h2>
+        <p class="partnership-byline">Built in partnership with <a href="#partnership">Great Lakes Grow Lights &amp; Controls</a></p>
         <p>
           One operator platform brings room conditions, equipment control, schedules, alerts, and hardware health into a consistent workflow instead of treating every controller as an island.
         </p>
@@ -186,7 +216,12 @@
         </div>
 
         <div class="solution-actions" id="demo">
-          <a href="https://demo.liftlogicsystems.com" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+          <a href="https://demo.copperloon.com"
+             class="btn btn-primary btn-large"
+             target="_blank"
+             rel="noopener"
+             data-umami-event="demo_clicked"
+             data-umami-event-location="grow_section">
             Explore Interactive Demo
           </a>
           <div class="demo-note">
@@ -204,6 +239,34 @@
              alt="Grow-facility Mission Control dashboard showing multiple rooms, environmental readings, system connections, and alerts">
         <figcaption>Mission Control — Multi-room facility view</figcaption>
       </figure>
+    </div>
+  </section>
+
+  <section id="partnership" class="section section-light partnership" aria-labelledby="partnership-title">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-kicker">Our Cultivation Partner</span>
+        <h2 id="partnership-title">Lighting, equipment, and automation. Working together.</h2>
+        <p>Copper Loon partners with Great Lakes Grow Lights &amp; Controls to bring lighting, environmental sensing, irrigation, equipment control, scheduling, monitoring, and alerts together in one cultivation platform.</p>
+      </div>
+      <div class="partner-grid">
+        <article class="partner-card">
+          <div class="partner-logo partner-logo-copper"><img src="/static/images/brand/Copper_Loon_Logo_Horizontal_Reversed.svg" alt="Copper Loon" loading="lazy"></div>
+          <h3>Controls &amp; connected systems</h3>
+          <p>Copper Loon brings the software and automation that connect equipment and give operators a clear view of the facility.</p>
+          <ul><li>Controls and automation software</li><li>Sensors, monitoring, and alerts</li><li>Equipment integration and remote management</li></ul>
+        </article>
+        <article class="partner-card">
+          <div class="partner-logo partner-logo-greatlakes"><img src="/static/images/brand/great_lakes_logo.svg" alt="Great Lakes Grow Lights &amp; Controls" loading="lazy"></div>
+          <h3>Lighting &amp; cultivation equipment</h3>
+          <p>Great Lakes brings commercial grow lighting, power systems, grow racks, and cultivation equipment to the integrated facility.</p>
+          <ul><li>Commercial grow lighting</li><li>Power systems and grow racks</li><li>Cultivation equipment and facility expertise</li></ul>
+        </article>
+      </div>
+      <div class="partner-result">
+        <div><h3>Connected through Mission Control.</h3><p>Developed through a partnership between Copper Loon and Great Lakes Grow Lights &amp; Controls, Mission Control brings facility monitoring and equipment control into one operator platform.</p></div>
+        <a href="https://greatlakesgrowlights.com/mission-control/" class="btn btn-ghost" target="_blank" rel="noopener" data-umami-event="great_lakes_clicked" data-umami-event-location="partnership">Explore Great Lakes <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
   </section>
 
@@ -352,7 +415,9 @@
         </p>
 
         <a href="mailto:info@copperloon.com?subject=Copper%20Loon%20Free%20System%20Review"
-           class="btn btn-primary btn-large review-cta">
+           class="btn btn-primary btn-large review-cta"
+           data-umami-event="system_review_clicked"
+           data-umami-event-location="review_section">
           <span class="review-cta-inner">
             <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
             <span>Request a Free System Review</span>
